@@ -14,7 +14,7 @@ def create_view(request):
         return redirect('/')
 
     context={
-        'form':form
+        'form': form
     }
-
+   
     return render(request, "notepad/create",context)
