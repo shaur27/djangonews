@@ -1,6 +1,6 @@
 from django.urls import path
-from . import views
+from .views import create_view
 
 urlpatterns = [
-    path('create.html', views.create_view, name="create"),
+    path('create/', create_view, name="create"),
 ]
